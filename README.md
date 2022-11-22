@@ -1,18 +1,12 @@
-# [**@koa/multer**](https://github.com/koajs/multer)
-
-> Route middleware for Koa that handles `multipart/form-data` using [multer][]
+# [**koa-multer-esm**](https://github.com/UnKnoWn-Consortium/koa-multer-esm)
 
 [![NPM version][npm-img]][npm-url]
 [![NPM Downloads][downloads-image]][npm-url]
-[![Build status][travis-img]][travis-url]
-[![Test coverage][coveralls-img]][coveralls-url]
-[![Dependency status][david-img]][david-url]
 [![License][license-img]][license-url]
 
+Route middleware for Koa that handles `multipart/form-data` using [multer][] in authentic ESM.
 
-## Call for Maintainers
-
-This module is a fork of [koa-multer][], the most widely used multer middleware in the koa community.  Due to lack of maintenance, it was forked to the official Koa organization and is available under `@koa/multer` package name.
+This module is a ESM fork of [@koa/multer](https://github.com/koajs/multer) which is a fork of [koa-multer][], the most widely used multer middleware in the koa community.
 
 
 ## Install
@@ -20,16 +14,16 @@ This module is a fork of [koa-multer][], the most widely used multer middleware 
 > Note that you must install either `multer@1.x` (Buffer) or `multer@2.x` (Streams):
 
 ```sh
-npm install --save @koa/multer multer
+npm install --save koa-multer-esm multer
 ```
 
 
 ## Usage
 
 ```js
-const Koa = require('koa');
-const Router = require('@koa/router');
-const multer = require('@koa/multer');
+import Koa from "koa";
+import Router from "@koa/router";
+import multer from "koa-multer-esm";
 
 const app = new Koa();
 const router = new Router();
@@ -79,10 +73,11 @@ app.listen(3000);
 
 ## Contributors
 
-| Name            | Website                         |
-| --------------- | ------------------------------- |
-| **Nick Baugh**  | <http://niftylettuce.com/>      |
-| **Imed Jaberi** | <https://www.3imed-jaberi.com/> |
+| Name                   | Website                         |
+| ---------------------- | ------------------------------- |
+| **Nick Baugh**         | <http://niftylettuce.com/>      |
+| **Imed Jaberi**        | <https://www.3imed-jaberi.com/> |
+| **UnKnoWn-Consortium** |                                 |
 
 
 ## License
@@ -94,23 +89,11 @@ app.listen(3000);
 
 [npm-img]: https://img.shields.io/npm/v/@koa/multer.svg?style=flat-square
 
-[npm-url]: https://npmjs.org/package/@koa/multer
-
-[travis-img]: https://img.shields.io/travis/koajs/multer.svg?style=flat-square
-
-[travis-url]: https://travis-ci.org/koajs/multer
-
-[coveralls-img]: https://img.shields.io/coveralls/koajs/multer.svg?style=flat-square
-
-[coveralls-url]: https://coveralls.io/r/koajs/multer?branch=master
+[npm-url]: https://www.npmjs.com/package/koa-multer-esm
 
 [license-img]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
 
 [license-url]: LICENSE
-
-[david-img]: https://img.shields.io/david/koajs/multer.svg?style=flat-square
-
-[david-url]: https://david-dm.org/koajs/multer
 
 [downloads-image]: https://img.shields.io/npm/dm/@koa/multer.svg?style=flat-square
 
