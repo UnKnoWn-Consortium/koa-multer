@@ -4,7 +4,7 @@
 [![NPM Downloads][downloads-image]][npm-url]
 [![License][license-img]][license-url]
 
-Route middleware for Koa that handles `multipart/form-data` using [multer][] in authentic ESM.
+Route middleware for Koa that handles `multipart/form-data` using [multer][] refactored in authentic ESM. CJS module is also generated via ESBuild. 
 
 This module is a ESM fork of [@koa/multer](https://github.com/koajs/multer) which is a fork of [koa-multer][], the most widely used multer middleware in the koa community.
 
